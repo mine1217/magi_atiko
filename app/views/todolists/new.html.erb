@@ -1,0 +1,10 @@
+<h1>New Book</h1>
+<%= form_with model: @book, url:'/todolists', local:true do |f| %>
+  <h3>Title</h3>
+  <%= f.text_field :title %>
+  <h3>Body</h3>
+  <%= f.text_area :body %>
+  <h3>
+  <%= f.submit 'Create Book' %>
+  </h3>
+<% end %>
